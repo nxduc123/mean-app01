@@ -1,0 +1,19 @@
+{
+  "name": "mean-stack",
+  "version": "1.0.0",
+  "description": "MEAN STACK APP 01",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nxduc123/mean-app01.git"
+  },
+  "author": "ducnx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nxduc123/mean-app01/issues"
+  },
+  "homepage": "https://github.com/nxduc123/mean-app01#readme"
+}
