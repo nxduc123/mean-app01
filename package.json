@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nxduc123/mean-app01/issues"
   },
-  "homepage": "https://github.com/nxduc123/mean-app01#readme"
+  "homepage": "https://github.com/nxduc123/mean-app01#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
