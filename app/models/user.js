@@ -3,9 +3,9 @@ var mongoose =require('mongoose');
 var Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
-    username: {
+    username : {
         type: String,
-        lowercase: true,
+      //  lowercase: true,
         required: true,
         unique: true
     },

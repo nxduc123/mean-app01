@@ -3,7 +3,11 @@ var app = express();
 var port = process.env.PORT || 3000;
 var morgan = require('morgan');
 var mongoose = require('mongoose');
-var User = require('./app/models/user')
+var User = require('./app/models/user');
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended : true}));
 
 app.use(morgan('dev'));
 
@@ -18,10 +22,11 @@ mongoose.connect('mongodb://localhost/meanstack', function(err){
 
 app.post('/users', function(req, res){
     var user = new User();
-    user.username = res.body.username;
+    user.username = req.body.username;
     user.password = req.body.password;
     user.email = req.body.email;
     user.save();
+    res.send('User Created ! ');
 });
 
  app.listen(port, function(){
